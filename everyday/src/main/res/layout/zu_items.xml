@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news_list_line">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_zu"
+            android:src="@drawable/news_pic_default"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="150dp" />
+        <TextView
+            android:id="@+id/zu_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:textColor="#c000"
+            android:text="这是"/>
+    </LinearLayout>
+
+
+</LinearLayout>
