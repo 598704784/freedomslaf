@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.example.signaldetection.homeActivity">
+
+        <EditText
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入当前检测位置"
+            android:textSize="18dp"
+            android:textCursorDrawable="@drawable/lin"
+            android:background="@drawable/shape"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#5000"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content" />
+ <LinearLayout
+     android:layout_marginTop="5dp"
+     android:layout_toRightOf="@+id/test"
+     android:layout_alignParentRight="true"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal">
+     <TextView
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="4g"
+         android:textColor="#000"
+         android:textStyle="bold"/>
+     <TextView
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="3g"
+         android:textColor="#000"
+         android:textStyle="bold"/>
+     <TextView
+         android:layout_weight="1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:text="2g"
+         android:textColor="#000"
+         android:textStyle="bold"/>
+
+ </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.example.signaldetection.items
+        android:id="@+id/it1"
+        xmlns:simpl="http://schemas.android.com/apk/res/com.example.signaldetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        simpl:yunyings="中国移动"
+        simpl:picture="@drawable/back_yidong">
+
+
+    </com.example.signaldetection.items>
+    <com.example.signaldetection.items
+        xmlns:simpl="http://schemas.android.com/apk/res/com.example.signaldetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        simpl:yunyings="中国联通"
+        simpl:picture="@drawable/back_liantong">
+
+
+    </com.example.signaldetection.items>
+    <com.example.signaldetection.items
+        xmlns:simpl="http://schemas.android.com/apk/res/com.example.signaldetection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        simpl:yunyings="中国电信"
+        simpl:picture="@drawable/back_dianxin">
+    </com.example.signaldetection.items>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvjt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="截屏保存"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/qwt"
+            android:clickable="true"
+            android:onClick="click"/>
+        <TextView
+            android:id="@+id/tvls"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="历史记录"
+            android:clickable="true"
+            android:onClick="click"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/we"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="执行检测"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/cx"/>
+    </LinearLayout>
+
+
+</LinearLayout>

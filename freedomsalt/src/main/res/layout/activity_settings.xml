@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.freedomsalt.SettingsActivity">
+    <TextView
+        style="@style/Title"
+        android:text="系统设置"/>
+    <com.example.freedomsalt.SettingItems
+        xmlns:free="http://schemas.android.com/apk/res/com.example.freedomsalt"
+        android:id="@+id/it1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        free:destitle="是否开启自动更新"
+        free:desoff="自动更新已关闭"
+        free:deson="自动更新已开启">
+
+    </com.example.freedomsalt.SettingItems>
+    <com.example.freedomsalt.SettingItems
+        xmlns:free="http://schemas.android.com/apk/res/com.example.freedomsalt"
+        android:id="@+id/it2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        free:destitle="是否来电归属地"
+        free:desoff="来电归属已关闭"
+        free:deson="来电归属已开启">
+
+    </com.example.freedomsalt.SettingItems>
+
+
+</LinearLayout>

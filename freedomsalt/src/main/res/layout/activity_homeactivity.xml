@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.freedomsalt.homeactivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sp">
+        <TextView
+            android:id="@+id/tv_fd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自由卫士"
+            android:textSize="18sp"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowColor="#ff0000"
+            android:shadowRadius="5"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fd"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主界面"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+    <GridView
+        android:id="@+id/gv"
+        android:visibility="gone"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+</RelativeLayout>
